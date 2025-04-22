@@ -1,5 +1,4 @@
-﻿using DataLayer.GenericRepository;
-using DB.Core;
+using DataLayer.GenericRepository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Student.Data
 {
-    public interface IStudentRepo : IRepository<DB.Core.Student>
+    public interface IStudentRepo : IRepository<global::DB.Core.Student>
     {
     }
 }
