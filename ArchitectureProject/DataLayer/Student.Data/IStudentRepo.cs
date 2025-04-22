@@ -8,7 +8,7 @@ using DB.Core;
 
 namespace DataLayer.Student.Data
 {
-    public interface IStudentRepo : IRepository<DB.Core.Student>
+    public interface IStudentRepo : IRepository<global::DB.Core.Student>
     {
     }
 }
