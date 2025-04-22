@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DB.Core;
 
 namespace DataLayer.Student.Data
 {
-    public interface IStudentRepo : IRepository<DB.Core.Student>
+    public interface IStudentRepo : IRepository<Student>
     {
     }
 }
