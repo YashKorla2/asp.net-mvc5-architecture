@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.IO;
 using DataLayer.GenericRepository;
+using DB.Core;
 
 namespace DataLayer.Student.Data
 {
@@ -15,7 +16,8 @@ namespace DataLayer.Student.Data
         static StudentRepo()
         {
             string assemblyPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DB.Core.dll");
-            Assembly.LoadFrom(assemblyPath);
+            Assembly assembly = Assembly.LoadFrom(assemblyPath);
+            AppDomain.CurrentDomain.Load(assembly.GetName());
         }
 
         public StudentRepo(DbContext context) : base(context)
