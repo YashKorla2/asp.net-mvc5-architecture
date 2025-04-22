@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.IO;
 using DataLayer.GenericRepository;
-using DB.Core;
 
 namespace DataLayer.Student.Data
 {
@@ -22,6 +21,12 @@ namespace DataLayer.Student.Data
                 if (AppDomain.CurrentDomain.GetAssemblies().All(a => a.FullName != assembly.FullName))
                 {
                     AppDomain.CurrentDomain.Load(assembly.GetName());
+                }
+
+                Type dbType = assembly.GetType("DB.Core.Student");
+                if (dbType == null)
+                {
+                    throw new TypeLoadException("Unable to load type DB.Core.Student from DB.Core assembly");
                 }
             }
             else
