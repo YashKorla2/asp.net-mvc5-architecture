@@ -1,9 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ServiceLayer.UnitOfWorkService;
+using DataLayer.Models; // Add this line to import the correct Student type
 
 namespace ServiceLayer.StudentService
 {
@@ -16,7 +17,7 @@ namespace ServiceLayer.StudentService
         }
         public int AddStudent()
         {
-            var s = new DB.Core.Student();
+            var s = new Student(); // Use Student from DataLayer.Models
             s.Name = "Asad";
             s.Batch = "BS101";
             _uow.StudentRepo.Insert(s);
