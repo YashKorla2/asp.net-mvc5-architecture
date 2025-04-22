@@ -11,7 +11,7 @@ namespace DataLayer.Student.Data
 {
     public class StudentRepo : Repository<DB.Core.Student>, IStudentRepo
     {
-        public StudentRepo(ArchitectureEntities context) : base(context)
+        public StudentRepo(DbContext context) : base(context)
         {
         }
     }
