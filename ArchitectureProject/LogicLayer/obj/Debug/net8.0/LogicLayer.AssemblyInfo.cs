@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LogicLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a0bb70ee6e3a1927c1059eb8eeb02e4238e025e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b4f1b953a2c9d4318bd908a43e2913aa5bff1a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogicLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogicLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
