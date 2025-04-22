@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.IO;
 using DataLayer.GenericRepository;
-using DB.Core;
 
 namespace DataLayer.Student.Data
 {
@@ -16,8 +15,15 @@ namespace DataLayer.Student.Data
         static StudentRepo()
         {
             string assemblyPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DB.Core.dll");
-            Assembly assembly = Assembly.LoadFrom(assemblyPath);
-            AppDomain.CurrentDomain.Load(assembly.GetName());
+            if (File.Exists(assemblyPath))
+            {
+                Assembly assembly = Assembly.LoadFrom(assemblyPath);
+                AppDomain.CurrentDomain.Load(assembly.GetName());
+            }
+            else
+            {
+                throw new FileNotFoundException($"DB.Core.dll not found at {assemblyPath}");
+            }
         }
 
         public StudentRepo(DbContext context) : base(context)
