@@ -8,15 +8,13 @@ using System.Reflection;
 using DataLayer.GenericRepository;
 using DB.Core;
 
-[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("DB.Core")]
-
 namespace DataLayer.Student.Data
 {
     public class StudentRepo : Repository<DB.Core.Student>, IStudentRepo
     {
         static StudentRepo()
         {
-            Assembly.LoadFrom(@"..\DB.Core\bin\Debug\DB.Core.dll");
+            Assembly.Load("DB.Core");
         }
 
         public StudentRepo(DbContext context) : base(context)
