@@ -10,7 +10,7 @@ using DataLayer.GenericRepository;
 
 namespace DataLayer.Student.Data
 {
-    public class StudentRepo : Repository<DB.Core.Student>, IStudentRepo
+    public class StudentRepo : Repository<global::DB.Core.Student>, IStudentRepo
     {
         static StudentRepo()
         {
