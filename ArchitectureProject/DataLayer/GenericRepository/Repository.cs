@@ -1,4 +1,3 @@
-﻿using DB.Core;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -10,9 +9,9 @@ namespace DataLayer.GenericRepository
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        public ArchitectureEntities context;
+        public DbContext context;
         public DbSet<T> dbset;
-        public Repository(ArchitectureEntities context)
+        public Repository(DbContext context)
         {
             this.context = context;
             dbset = context.Set<T>();
