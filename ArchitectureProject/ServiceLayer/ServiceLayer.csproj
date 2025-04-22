@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="EntityFramework" Version="6.5.1" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="../DataLayer/DataLayer.csproj" />
     <ProjectReference Include="../DB.Core/DB.Core.csproj" />
   </ItemGroup>
@@ -49,5 +46,8 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.5.1" />
   </ItemGroup>
 </Project>
