@@ -1,9 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ServiceLayer.UnitOfWorkService;
+using DB.Core;
 
 namespace ServiceLayer.StudentService
 {
@@ -16,7 +17,7 @@ namespace ServiceLayer.StudentService
         }
         public int AddStudent()
         {
-            var s = new DB.Core.Student();
+            var s = new Student();
             s.Name = "Asad";
             s.Batch = "BS101";
             _uow.StudentRepo.Insert(s);
