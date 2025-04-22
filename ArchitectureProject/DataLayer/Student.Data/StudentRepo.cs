@@ -7,22 +7,17 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.IO;
 using DataLayer.GenericRepository;
+using DB.Core;
 
 namespace DataLayer.Student.Data
 {
-    public class StudentRepo : Repository<global::DB.Core.Student>, IStudentRepo
+    public class StudentRepo : Repository<DB.Core.Student>, IStudentRepo
     {
         static StudentRepo()
         {
             string assemblyPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DB.Core.dll");
             Assembly assembly = Assembly.LoadFrom(assemblyPath);
             AppDomain.CurrentDomain.Load(assembly.GetName());
-
-            Type studentType = assembly.GetType("DB.Core.Student");
-            if (studentType == null)
-            {
-                throw new TypeLoadException("Unable to load type 'DB.Core.Student' from assembly 'DB.Core'.");
-            }
         }
 
         public StudentRepo(DbContext context) : base(context)
