@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="EntityFramework" Version="6.5.1" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="DB.Core">
       <HintPath>..\DB.Core\bin\Debug\DB.Core.dll</HintPath>
     </Reference>
@@ -40,5 +37,8 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.5.1" />
   </ItemGroup>
 </Project>
