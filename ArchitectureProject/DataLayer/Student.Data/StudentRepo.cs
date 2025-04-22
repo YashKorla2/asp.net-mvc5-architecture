@@ -10,33 +10,42 @@ using DataLayer.GenericRepository;
 
 namespace DataLayer.Student.Data
 {
-    public class StudentRepo : Repository<DB.Core.Student>, IStudentRepo
+public class StudentRepo : Repository<DB.Core.Student>, IStudentRepo
+{
+    static StudentRepo()
     {
-        static StudentRepo()
+        DBCoreLoader.EnsureLoaded();
+    }
+
+        public StudentRepo(DbContext context) : base(context)
+        {
+        }
+    }
+}
+
+// Ensure DB.Core types are loaded
+static class DBCoreLoader
+{
+    static DBCoreLoader()
+    {
+        var assembly = AppDomain.CurrentDomain.GetAssemblies().FirstOrDefault(a => a.GetName().Name == "DB.Core");
+        if (assembly == null)
         {
             string assemblyPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DB.Core.dll");
             if (File.Exists(assemblyPath))
             {
-                Assembly assembly = Assembly.LoadFrom(assemblyPath);
-                if (AppDomain.CurrentDomain.GetAssemblies().All(a => a.FullName != assembly.FullName))
-                {
-                    AppDomain.CurrentDomain.Load(assembly.GetName());
-                }
-
-                Type dbType = assembly.GetType("DB.Core.Student");
-                if (dbType == null)
-                {
-                    throw new TypeLoadException("Unable to load type DB.Core.Student from DB.Core assembly");
-                }
+                Assembly.LoadFrom(assemblyPath);
             }
             else
             {
                 throw new FileNotFoundException($"DB.Core.dll not found at {assemblyPath}");
             }
         }
+    }
 
-        public StudentRepo(DbContext context) : base(context)
-        {
-        }
+    public static void EnsureLoaded()
+    {
+        // This method is intentionally empty.
+        // The static constructor will be called when this method is first accessed.
     }
 }
