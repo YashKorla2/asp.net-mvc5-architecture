@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.IO;
 using DataLayer.GenericRepository;
-using DB.Core;
 
 namespace DataLayer.Student.Data
 {
@@ -19,7 +18,10 @@ namespace DataLayer.Student.Data
             if (File.Exists(assemblyPath))
             {
                 Assembly assembly = Assembly.LoadFrom(assemblyPath);
-                AppDomain.CurrentDomain.Load(assembly.GetName());
+                if (AppDomain.CurrentDomain.GetAssemblies().All(a => a.FullName != assembly.FullName))
+                {
+                    AppDomain.CurrentDomain.Load(assembly.GetName());
+                }
             }
             else
             {
