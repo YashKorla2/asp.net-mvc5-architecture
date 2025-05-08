@@ -2,10 +2,11 @@ using DataLayer.Student.Data;
 using DB.Core;
 using ServiceLayer.StudentService;
 using ServiceLayer.UnitOfWorkService;
-using System.Web.Mvc;
 using Unity;
 using Unity.Lifetime;
 using Unity.Mvc5;
+using Microsoft.AspNetCore.Mvc;
+
 
 namespace LogicLayer
 {
@@ -23,7 +24,8 @@ namespace LogicLayer
             container.RegisterType<IUnitOfWork, UnitOfWork>(new HierarchicalLifetimeManager());
             container.RegisterType<IStudentRepo, StudentRepo>(new HierarchicalLifetimeManager());
             container.RegisterType<ArchitectureEntities>(new HierarchicalLifetimeManager());
-            DependencyResolver.SetResolver(new UnityDependencyResolver(container));
+            /* Added by CTA: This method is not supported. Use the startup class to register dependency containers */
+DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
     }
 }
