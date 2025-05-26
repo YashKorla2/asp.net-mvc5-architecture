@@ -1,0 +1,378 @@
+{
+  "format": 1,
+  "restore": {
+    "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/ArchitectureProject/ArchitectureProject.csproj": {}
+  },
+  "projects": {
+    "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/ArchitectureProject/ArchitectureProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/ArchitectureProject/ArchitectureProject.csproj",
+        "projectName": "ArchitectureProject",
+        "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/ArchitectureProject/ArchitectureProject.csproj",
+        "packagesPath": "/tmp/tempfspartition/QnetTransformArtifacts/packages",
+        "outputPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/ArchitectureProject/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/LogicLayer/LogicLayer.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/LogicLayer/LogicLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1605"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "Microsoft.AspNetCore.SystemWebAdapters": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DB.Core/DB.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DB.Core/DB.Core.csproj",
+        "projectName": "DB.Core",
+        "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DB.Core/DB.Core.csproj",
+        "packagesPath": "/tmp/tempfspartition/QnetTransformArtifacts/packages",
+        "outputPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DB.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1605"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DataLayer/DataLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DataLayer/DataLayer.csproj",
+        "projectName": "DataLayer",
+        "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DataLayer/DataLayer.csproj",
+        "packagesPath": "/tmp/tempfspartition/QnetTransformArtifacts/packages",
+        "outputPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DataLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1605"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/LogicLayer/LogicLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/LogicLayer/LogicLayer.csproj",
+        "projectName": "LogicLayer",
+        "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/LogicLayer/LogicLayer.csproj",
+        "packagesPath": "/tmp/tempfspartition/QnetTransformArtifacts/packages",
+        "outputPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/LogicLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DB.Core/DB.Core.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DB.Core/DB.Core.csproj"
+              },
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DataLayer/DataLayer.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DataLayer/DataLayer.csproj"
+              },
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/ServiceLayer/ServiceLayer.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/ServiceLayer/ServiceLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1605"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "Unity": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/ServiceLayer/ServiceLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/ServiceLayer/ServiceLayer.csproj",
+        "projectName": "ServiceLayer",
+        "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/ServiceLayer/ServiceLayer.csproj",
+        "packagesPath": "/tmp/tempfspartition/QnetTransformArtifacts/packages",
+        "outputPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/ServiceLayer/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DB.Core/DB.Core.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DB.Core/DB.Core.csproj"
+              },
+              "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DataLayer/DataLayer.csproj": {
+                "projectPath": "/tmp/tempfspartition/QnetTransformArtifacts/MidTransformCode/sourceCode/ArchitectureProject/DataLayer/DataLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1605"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/root/.dotnet/sdk/8.0.409/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

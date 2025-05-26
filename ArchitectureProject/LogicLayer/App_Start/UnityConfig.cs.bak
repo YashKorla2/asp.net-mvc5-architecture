@@ -1,0 +1,31 @@
+using DataLayer.Student.Data;
+using DB.Core;
+using ServiceLayer.StudentService;
+using ServiceLayer.UnitOfWorkService;
+using Unity;
+using Unity.Lifetime;
+using Unity.Mvc5;
+using Microsoft.AspNetCore.Mvc;
+
+
+namespace LogicLayer
+{
+    public static class UnityConfig
+    {
+        public static void RegisterComponents()
+        {
+			var container = new UnityContainer();
+
+            // register all your components with the container here
+            // it is NOT necessary to register your controllers
+
+            // e.g. container.RegisterType<ITestService, TestService>();
+            container.RegisterType<IStudentService, StudentService>();
+            container.RegisterType<IUnitOfWork, UnitOfWork>(new HierarchicalLifetimeManager());
+            container.RegisterType<IStudentRepo, StudentRepo>(new HierarchicalLifetimeManager());
+            container.RegisterType<ArchitectureEntities>(new HierarchicalLifetimeManager());
+            /* Added by CTA: This method is not supported. Use the startup class to register dependency containers */
+DependencyResolver.SetResolver(new UnityDependencyResolver(container));
+        }
+    }
+}
